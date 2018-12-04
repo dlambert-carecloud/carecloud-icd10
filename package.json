@@ -1,0 +1,24 @@
+{
+  "name": "icdapp",
+  "version": "1.0.0",
+  "description": "CareCloud ICD-10 Application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlambert-carecloud/CC-ICD.git"
+  },
+  "author": "Daniel Lambert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dlambert-carecloud/CC-ICD/issues"
+  },
+  "homepage": "https://github.com/dlambert-carecloud/CC-ICD#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.14"
+  }
+}
