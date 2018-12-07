@@ -3,8 +3,10 @@ mongoose = require("mongoose");
 mongoose.connect("mongodb://localhost/icdapp");
 
 var codeSchema = new mongoose.Schema({
-	chapter: Number,
-	code: String
+	chapter: [{
+		name: String,
+		desc: String
+	}]
 });
 
 var Code = mongoose.model("Code", codeSchema);
@@ -24,8 +26,12 @@ var Code = mongoose.model("Code", codeSchema);
 // });
 
 Code.create({
-	chapter: 3,
-	code: "test 3"
+    "chapter": [
+      {
+        "name": "1",
+        "desc": "Certain infectious and parasitic diseases (A00-B99)"
+      }
+    ]
 }, function(err, code){
 	if(err){
 		console.log("Something is off");
@@ -36,12 +42,12 @@ Code.create({
 });
 
 
-Code.find({}, function(err, codes){
-	if(err){
-		console.log("Something is off");
-		console.log(err);
-	} else {
-		console.log("All the codes...");
-		console.log(codes);
-	}
-});
+// Code.find({}, function(err, codes){
+// 	if(err){
+// 		console.log("Something is off");
+// 		console.log(err);
+// 	} else {
+// 		console.log("All the codes...");
+// 		console.log(codes);
+// 	}
+// });
