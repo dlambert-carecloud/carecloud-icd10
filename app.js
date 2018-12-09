@@ -5,8 +5,8 @@ var express = require("express");
 
 
 
-application.use("/public", express.static(path.join(__dirname, 'public')));
 app.set("view engine", "ejs");
+app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.urlencoded({extended: true}));
 mongoose.connect("mongodb://localhost/icdapp");
 
@@ -33,7 +33,7 @@ Code.create({
 
 // index page 
 app.get('/', function(req, res) {
-    res.render('pages/index');
+    res.render('pages/styling');
 });
 
 // about page 
