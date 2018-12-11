@@ -1,3 +1,11 @@
+body{
+	background: linear-gradient(140.81deg, #3587CA 0%, #002451 100%);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center top;
+	background-attachment: fixed;
+}
+
 h1 {
     font-size: 100px;
 }
