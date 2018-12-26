@@ -1,16 +1,16 @@
 var express = require("express");
 var router = express.Router();
-var User = require("../models/codes");
+var Chapter = require("../models/chapter1");
 
 // Route - Show all chapters
 app.get('/chapters', function(req, res){
 	//Get all chapters from DB
-	Code.find({}, function(err, allCodes){
+	Chapter.find({}, function(err, allChapters){
 		if(err){
 			console.log(err);
 		} else {
-			console.log(allCodes);
-			res.render("pages/chapter", {codes:allCodes});
+			console.log(allChapters);
+			res.render("pages/chapter", {chapters:allChapters});
 		}
 	})
 });

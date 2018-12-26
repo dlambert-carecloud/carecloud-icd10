@@ -2,7 +2,8 @@ var express = require("express");
 	app = express(),
 	bodyParser = require("body-parser"),
 	mongoose = require("mongoose"),
-	Code = require("./models/codes")
+	// Code = require("./models/codes")
+	Chapter = require("./models/chapter1")
 
 
 
@@ -12,17 +13,28 @@ app.use(bodyParser.urlencoded({extended: true}));
 mongoose.connect("mongodb://localhost/icdapp");
 
 
-// Code.create({
-// 	chapter: 4,
-// 	code: "test 4"
-// }, function(err, code){
+// Chapter.create({
+//  	name: 1,
+// 	desc: "Certain infectious and parasitic diseases (A00-B99)",
+// 	includes: {
+// 		note: [
+// 			"diseases generally recognized as communicable or transmissible"
+// 		]
+// 	},
+// 	useAdditionalCode: {
+// 		note: [
+// 			"code to identify resistance to antimicrobial drugs (Z16.-)"
+// 		]
+// 	}
+// }, function(err, chapter){
 // 	if(err){
 // 		console.log("Something is off");
 // 	} else {
 // 		console.log("saved a code");
-// 		console.log(code);
+// 		console.log(chapter);
 // 	}
 // });
+
 
 
 // requiring routes

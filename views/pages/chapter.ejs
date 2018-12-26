@@ -26,16 +26,16 @@
                 <p class="childtext">Description</p>
             </div>
         </div>
-        <% codes.forEach(function(code){ %>
+        <% chapters.forEach(function(chapter){ %>
         <div class="col-md-10  col-md-offset-1 mainresult">
                     <div class="col-md-4 col-sm-4">
-                        <p class="maintext"><%= code.chapter %></p>
+                        <p class="maintext"><%= chapter.desc %></p>
                     </div>
                     <div class="col-md-4 col-sm-4">
-                        <p class="childtext"><%= code.code %></h4>
+                        <p class="childtext"><%= chapter.name %></h4>
                     </div>
                     <div class="col-md-4 col-sm-4">
-                        <p class="childtext"><%= code.code %></p>
+                        <p class="childtext"><%= chapter.name %></p>
                     </div>
         </div>
     <% }); %>
