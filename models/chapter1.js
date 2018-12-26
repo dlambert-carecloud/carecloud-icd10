@@ -14,6 +14,26 @@ var chapter1Schema = new mongoose.Schema({
 		note: [
 		String
 		]
+	},
+	excludes1: {
+		note: [
+		String
+		]
+	},
+	excludes2: {
+		note: [
+		String
+		]
+	},
+	sectionIndex: {
+		sectionRef: [
+			{
+			first: String,
+			last: String,
+			id: String,
+			text: String
+			}
+		]
 	}
 });
 

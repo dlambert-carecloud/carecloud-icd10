@@ -14,7 +14,7 @@ mongoose.connect("mongodb://localhost/icdapp");
 
 
 // Chapter.create({
-//  	name: 1,
+//  name: 1,
 // 	desc: "Certain infectious and parasitic diseases (A00-B99)",
 // 	includes: {
 // 		note: [
@@ -24,6 +24,29 @@ mongoose.connect("mongodb://localhost/icdapp");
 // 	useAdditionalCode: {
 // 		note: [
 // 			"code to identify resistance to antimicrobial drugs (Z16.-)"
+// 		]
+// 	},
+// 	excludes1: {
+// 		note: [
+// 			"certain localized infections - see body system-related chapters"
+// 		]
+// 	},
+// 	excludes2: {
+// 		note: [
+// 			"carrier or suspected carrier of infectious disease (Z22.-)",
+//             "infectious and parasitic diseases complicating pregnancy, childbirth and the puerperium (O98.-)",
+//             "infectious and parasitic diseases specific to the perinatal period (P35-P39)",
+//             "influenza and other acute respiratory infections (J00-J22)"
+// 		]
+// 	},
+// 	sectionIndex: {
+// 		sectionRef: [
+// 			{
+// 			first: "A00",
+// 			last: "A09",
+// 			id: "A00-A09",
+// 			text: "Intestinal infectious diseases"
+// 			}
 // 		]
 // 	}
 // }, function(err, chapter){
