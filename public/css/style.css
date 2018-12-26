@@ -7,7 +7,9 @@ body{
 }
 
 h1 {
-    font-size: 100px;
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 300px;
 }
 
 .navbar {
@@ -18,4 +20,49 @@ h1 {
 
 .navbar-header img {
 	width: 100px;
+}
+
+.subtext {
+	color: rgba(255,255,255,0.62);
+	font-family: "ProximaNova-Reg";
+	font-size: 28px;
+	line-height: 34px;
+	text-align: center;
+}
+
+#main{
+	margin-top: 10%;
+}
+
+.search input {
+	background: linear-gradient(218.74deg, #002442 0%, #002C64 100%);
+	border-radius: 15px;
+	height: 60px;
+	color: #ffffff;
+}
+
+.search button {
+	height: 60px;
+	width: 120px;
+	border-radius: 15px 15px 15px 0px;
+	background: linear-gradient(180deg, #00CBF1 0%, #009BDE 100%);
+	color: #ffffff;
+	font-size: 24px;
+}
+
+.mainresult {
+	background-color: rgba(0,160,224,0.1);
+	box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.1);
+	height: 50px;
+
+}
+
+.maintext {
+	color: #5CD7FF;
+	font-size: 28px;
+}
+
+.childtext {
+	color: #45E3BA;
+	font-size: 28px;
 }

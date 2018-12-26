@@ -4,5 +4,5 @@ var User = require("../models/codes");
 
 // Route
 app.get('/', function(req, res) {
-    res.render('pages/styling');
+    res.render('pages/index');
 });
